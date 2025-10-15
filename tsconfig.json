@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6",                  // modern JS
+    "module": "esnext",               // ES modules
+    "strict": true,                   // all strict checks
+    "esModuleInterop": true,          // interop for commonjs
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,             // skip checking library files
+    "outDir": "./dist",               // compiled JS output folder
+    "sourceMap": true,                // generate source maps
+    "declaration": true,              // generate .d.ts files
+    "declarationMap": true,           // map for declarations
+    "lib": ["es6", "dom"],            // browser + ES6 globals
+    "moduleResolution": "node",       // resolve modules like Node
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "verbatimModuleSyntax": true
+  },
+  "include": ["./main.ts"],           // include your TS source
+  "exclude": ["node_modules"]         // exclude dependencies
+}
